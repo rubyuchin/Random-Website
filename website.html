@@ -1,0 +1,64 @@
+<html>
+<head>
+  <script>
+
+    function randomSite() {
+
+
+      var sites = ['http://www.google.com','http://endless.horse/','https://www.amazon.com/dp/B01MS73G0W?tag=bfbetsy-20&ascsubtag=4431391%2C17%2C21%2Cd%2C0%2C0%2Cgoogle.com%2C553%3A1%3B520%3A2','http://eelslap.com/',
+    'http://tacospin.com/','https://thisissand.com/','https://www.koalastothemax.com/',
+    'https://www.amazon.com/dp/B01J4919TI?tag=bfbetsy-20&ascsubtag=4431391%2C1%2C21%2Cd%2C0%2C0%2Cgoogle.com%2C553%3A1%3B520%3A2',
+    'http://www.staggeringbeauty.com/','https://www.amazon.com/dp/B00BC1GCOO?tag=bfbetsy-20&ascsubtag=4431391%2C5%2C21%2Cd%2C0%2C0%2Cgoogle.com%2C553%3A1%3B520%3A2',
+    'http://getwallpapers.com/wallpaper/full/2/1/9/699354-cute-dog-backgrounds-2560x2048-htc.jpg', 'https://www.amazon.com/dp/B00OAC9BUO?tag=bfbetsy-20&ascsubtag=4431391%2C10%2C21%2Cd%2C0%2C0%2Cgoogle.com%2C553%3A1%3B520%3A2',
+    'https://www.amazon.com/dp/B0046GK1AI?tag=bfbetsy-20&ascsubtag=4431391%2C12%2C21%2Cd%2C0%2C0%2Cgoogle.com%2C553%3A1%3B520%3A2',
+    'https://www.amazon.com/dp/B00CJQ3QZ4?tag=bfbetsy-20&ascsubtag=4431391%2C13%2C21%2Cd%2C0%2C0%2Cgoogle.com%2C553%3A1%3B520%3A2',
+    'https://images-na.ssl-images-amazon.com/images/I/81L4KSekEsL._SL1500_.jpg', 'http://isearthapla.net/', 'http://burymewithmymoney.com/', 'https://corgiorgy.com/', 'http://ismayonnaiseaninstrum.net/',
+    'http://orteil.dashnet.org/cookieclicker/', 'https://www.amazon.com/Hutzler-3571-571-Banana-Slicer/dp/B0047E0EII', 'http://endless.horse/',
+    'https://www.amazon.com/dp/B00B5YQY6O/?tag=readerwp-20','https://www.amazon.com/dp/B00KHZGMZ0/?tag=readerwp-20', 'http://en.bcdn.biz/Images/2018/6/6/6483b0a6-667e-4209-9b66-5b4bce6b4e53.jpg',
+    'https://www.totalgirl.com.au/images/default-source/default-album/flower-dog-meme.jpg?sfvrsn=0','http://beesbeesbees.com/', 'https://ittakes10k.files.wordpress.com/2012/12/cute-dog.jpg',
+    'http://www.leduchamp.com/', 'http://r33b.net/', 'http://randomcolour.com/', 'https://media1.popsugar-assets.com/files/thumbor/MQp5-I2JHXfal59DuFEmhs6ssYQ/fit-in/1200x630/filters:format_auto-!!-:strip_icc-!!-:fill-!white!-/2013/04/15/5/192/1922243/ccab075253b1849a_3cd7c396984711e28dc022000a1f8c21_7/i/Silly-Animal-Memes.jpg',
+    'https://cdn.lifebuzz.com/images/67094/lifebuzz-bdffe4e5a97f647aff6321f0aceb0a47-limit_2000.jpg', 'http://listposts.com/wp-content/uploads/2017/04/animal-memes-cat-collects-rocks.jpg', 'https://i.pinimg.com/originals/2f/b8/61/2fb861b5899ed2baee9f29fafcd5a966.jpg',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ24jmhLcDHkYC4gEDY7IPgRUrLWAT58G2xctIIKPBrB7Gyjbw', 'https://cdn.lolwot.com/wp-content/uploads/2015/04/20-animal-memes-that-show-how-we-feel-on-mondays-1.jpg',
+    'http://pleated-jeans.com/wp-content/uploads/2017/04/funny-wholesome-animal-memes-11.jpg', 'https://cdn.lolwot.com/wp-content/uploads/2015/07/20-hilarious-animal-memes-that-will-make-you-lol-1.jpg',
+    'https://sayingimages.com/wp-content/uploads/When-Youre-Full-Then-Someone-Brings-Out-A-Cake.jpg', 'http://www.sanger.dk/', 'http://www.everydayim.com/', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj8AkAMp8PPtacx-Qqz51zL-M5aUTyLpdmHlRAqAGYyEddMv4NZA',
+    'https://cache.desktopnexus.com/thumbseg/33/33678-bigthumbnail.jpg', 'https://usercontent1.hubstatic.com/13236256_f520.jpg', 'http://www.petsworld.in/blog/wp-content/uploads/2014/08/funny-dog-5.jpg',
+    'http://metaphorsofinfinity.com/', 'https://www.50-best.com/images/animal_memes/thumbs/1-5.jpg', 'http://images3.memedroid.com/images/UPLOADED500/5acbedd7b30fe.jpeg',
+    'https://i.redd.it/nhyhzytjwuq01.png', 'https://i.redd.it/hk3hmug36juy.jpg', 'https://i.chzbgr.com/full/9097508352/h31ED3FB4/', 'https://i.redd.it/5ryx0x4tgaq01.jpg', 'https://i.amz.mshcdn.com/9cB-3-aunJgeoUxoYnUmd5Ih3tA=/950x534/https%3A%2F%2Fblueprint-api-production.s3.amazonaws.com%2Fuploads%2Fstory%2Fthumbnail%2F69391%2F0f989f75-c9d5-4394-a062-cd9cc96e8a7d.png',
+    'https://twistedsifter.files.wordpress.com/2017/03/best-of-wholesome-memes-reddit-2.jpg?w=750&h=768', 'https://assets.rbl.ms/13960096/980x.png'
+ ];
+      var randomNumber = Math.floor(Math.random() * (sites.length));
+      window.open(sites[randomNumber],'_blank');
+    }
+  </script>
+
+<style>
+body{
+  background-color: #4AC7F6;
+}
+.button {
+    background-color: white;
+    border: none
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    font-size: 50px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {
+  background-color: #4AC7F6;
+  color: black;
+  border: 3px solid pink;
+}
+</style>
+</head>
+
+<body>
+<a href="#" class="button button1" onclick="randomSite()">Click here to go to a really useful website!</a>
+</body>
+</html>
